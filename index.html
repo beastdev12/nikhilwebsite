@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/portfolio.css">
+	<!--<link rel="stylesheet" href="css/stylesB.css">
+	<link rel="stylesheet" href="css/assets.css">
+	<link rel="stylesheet" href="css/portfolio.css">-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;800&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class="dark">
+    <!--<main class="dark">
+        <div class="loader">
+			<div class="spinner inload">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			  </div>
+		</div>
+		<div class="div"></div>	
+    </main>-->
+	<div class="page-content">
+		<div class="navMobileMenu hidden">
+			<div class="socialMediaLinks">
+				<div class="instagram-mob"><img src="assets/icons/insta-w1.webp" alt=""></div>
+				<div class="imdb-mob"><img src="assets/icons/imdb-w1.webp" alt=""></div>
+				<div class="linkedIn-mob"><img src="assets/icons/linkin-w1.webp" alt=""></div>
+				<div class="twitter-mob"><img src="assets/icons/twit-w1.webp" alt=""></div>
+			</div>
+			<img src="assets/img/about-bg.webp" alt="">
+		</div>
+		<header class="navbar">
+			<div class="logo">
+				<a href="http://">
+					<img src="assets/logo.jpg" alt="Tech Logo">
+					<div class="logotext">NIKHIL CHAUHAN</div>
+				</a>
+			</div>
+			<nav class="nav-links">
+			  <ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#?id=?">Contact</a></li>
+			  </ul>
+			</nav>
+			<input type="checkbox" id="checkbox" class="menu">
+			<label for="checkbox" class="toggle hidden">
+				<div class="bars" id="bar1"></div>
+				<div class="bars" id="bar2"></div>
+				<div class="bars" id="bar3"></div>
+			</label>
+			
+
+		</header>
+
+		<div class="movie-preview-slider">
+			<div id="scrollLeftButton" ><img src="assets/icons/arrow2-left.png" alt=""></div>
+			<div id="scrollRightButton" ><img src="assets/icons/arrow2-right.png" alt=""></div>
+			<!--<button id="scrollLeftButton"><img src="assets/icons/arrow1-left.png" alt=""></button>
+			<button id="scrollRightButton"><img src="assets/icons/arrow1-right.png" alt=""></button>-->
+			<div class="slider-background-container">
+				<div class="silder-background active" id="item-1"><img src="assets/img/ordekh-swapna.webp" alt=""></div>
+				<div class="silder-background" id="item-2"><img src="assets/img/ordekh-swapna.webp" alt=""></div>
+				<div class="silder-background" id="item-3"><img src="assets/img/ordekh-swapna.webp" alt=""></div>
+				<!-- Add more background items as needed -->
+			</div>
+			<div class="slider-container snaps-inline">
+				<div class="slider-content" data-filter="item-1" data-url="assets/img/">
+					<img src="assets/img/ordekh-swapna.webp" alt="Content Image">
+					<span class="overlay">
+						<span class="content">
+							<div class="play-button">▶</div>
+							<div class="title-text">Ordekh Swapna</div>
+						</span>
+					</span>
+				</div>
+				<div class="slider-content" data-filter="item-2">
+					<img src="assets/img/ordekh-swapna.webp" alt="Content Image">
+					<span class="overlay">
+						<span class="content">
+							<div class="play-button">▶</div>
+							<div class="title-text">Ordekh Swapna</div>
+						</span>
+					</span>
+				</div>
+				<div class="slider-content" data-filter="item-3">
+					<img src="assets/img/ordekh-swapna.webp" alt="Content Image">
+					<span class="overlay">
+						<span class="content">
+							<div class="play-button">▶</div>
+							<div class="title-text">Ordekh Swapna</div>
+						</span>
+					</span>
+				</div>
+				<div class="slider-content" data-filter="item-4">
+					<img src="assets/img/ordekh-swapna.webp" alt="Content Image">
+					<span class="overlay">
+						<span class="content">
+							<div class="play-button">▶</div>
+							<div class="title-text">Ordekh Swapna</div>
+						</span>
+					</span>
+				</div>
+				<div class="slider-content" data-filter="item-5">
+					<img src="assets/img/ordekh-swapna.webp" alt="Content Image">
+					<span class="overlay">
+						<span class="content">
+							<div class="play-button">▶</div>
+							<div class="title-text">Ordekh Swapna</div>
+						</span>
+					</span>
+				</div>
+				<div class="slider-content" data-filter="item-6">
+					<img src="assets/img/ordekh-swapna.webp" alt="Content Image">
+					<span class="overlay">
+						<span class="content">
+							<div class="play-button">▶</div>
+							<div class="title-text">Ordekh Swapna</div>
+						</span>
+					</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="portfolio-wrapper">
+            <div class="sorter">
+                    <li><a class="active" data-filter="*" onclick="filterAndSetActive(this, '*')">All</a></li>
+                    <li><a class="" data-filter="type-1" onclick="filterAndSetActive(this, 'type-1')">Feature Film</a></li>
+                    <li><a class="" data-filter="type-2" onclick="filterAndSetActive(this, 'type-2')">Short Film</a></li>
+                    <li><a class="" data-filter="type-3" onclick="filterAndSetActive(this, 'type-3')">Documentary</a></li>
+            </div>
+            
+            <div class="portfolio">
+                
+                <div data-filter='type-1' class="container">
+                    <div class="image-holder">
+                        <img src="assets/img/Ordekh Swapna-poster.jpg" alt="" class="image">
+                        <span class="description">
+                            <div class="title">Ordekh Swapna</div>
+                            <div class="role">First Assistant Editor </div>
+                            <div class="time">2022</div>
+                        </span>
+                    </div>
+                </div>
+                <div data-filter='type-2' class="container">
+                    <div class="image-holder">
+                        <img src="assets/img/sonder-poster.png" alt="" class="image">
+                        <span class="description">
+                            <div class="title">Sonder</div>
+        
+                            <div class="role">Assistant Editor</div>
+                            <div class="role time">2022</div>
+                        </span>
+                    </div>
+                </div>
+                <div data-filter='type-3' class="container">
+                    <div class="image-holder">
+                        <img src="assets/img/Questionnaire-poster.jpg" alt="" class="image">
+                        <span class="description">
+                            <div class="title">Questionnaire</div>
+                            <div class="role">Editor</div>
+                            <div class="role time">2023</div>
+                        </span>
+                    </div>
+                </div>
+                <div data-filter='type-3' class="container">
+                    <div class="image-holder">
+                        <img src="assets/img/Master Saab-poster.jpg" alt="" class="image">
+                        <span class="description">
+                            <div class="title">Master Saab</div>
+                            <div class="role">Editor</div>
+                            <div class="role time">2022</div>
+                        </span>
+                    </div>
+                </div>
+                <div data-filter='type-2' class="container">
+                    <div class="image-holder">
+                        <img src="assets/img/fursandstrands-poster.jpg" alt="" class="image">
+                        <span class="description">
+                            <div class="title">Furs & Strands</div>
+                            <div class="role">Associate Editor</div>
+                            <div class="role time">2023</div>
+                        </span>
+                    </div>
+                </div>
+                <div data-filter='type-2' class="container">
+                    <div class="image-holder">
+                        <img src="assets/img/grey-poster.png" alt="" class="image">
+                        <span class="description">
+                            <div class="title">Grey</div>
+                            <div class="role">Editor</div>
+                            <div class="role time">2023</div>
+                        </span>
+                    </div>
+                </div>
+                <div data-filter='type-2' class="container">
+                    <div class="image-holder">
+                        <img src="assets/img/vanilla-poster.png" alt="" class="image">
+                        <span class="description">
+                            <div class="title">Vanilla</div>
+                            <div class="role">Editor</div>
+                            <div class="role time">2023</div>
+                        </span>
+                    </div>
+                </div>
+                <div data-filter='type-2' class="container">
+                    <div class="image-holder">
+                        <img src="assets/img/the-pink-umbrella-poster.jpg" alt="" class="image">
+                        <span class="description">
+                            <div class="title">The Pink Umbrella</div>
+                            <div class="role">Assistant Camera</div>
+                            <div class="role time">2023</div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+	</div>
+	
+	<!--<script src="js/loader.js"></script>-->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="js/HomepageSlider.js"></script>
+	<script src="js/portfolio.js"></script>
+	<script src="js/menu.js"></script>
+	<!--<script src="js/scriptsPort.js"></script>-->
+</body>
+</html>
