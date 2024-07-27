@@ -32,9 +32,11 @@ function setActiveListItem(element) {
     var listItems = document.getElementsByClassName('sorter')[0].getElementsByTagName('a');
     for (var i = 0; i < listItems.length; i++) {
       listItems[i].classList.remove('active');
+      listItems[i].classList.remove('gold');
     }
   
     // Add active class to the clicked list item
     element.classList.add('active');
+    element.classList.add('gold');
   }
   
