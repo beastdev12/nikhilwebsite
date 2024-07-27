@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carousel</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+}
+
+.carousel-content {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+    align-content: center;
+    object-fit: cover;
+    margin-top: 2%;
+    transition: height 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.image-container img {
+    width: 90%;
+    height: 100%;
+    margin-bottom: 0%;
+    object-fit: cover;
+    margin-left: 0%;
+}
+
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.play-icon {
+  width: 32px;
+  height: 32px;
+  stroke: #fff;
+}
+
+.carousel-previous,
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.carousel-previous {
+  left: 20px;
+}
+
+.carousel-next {
+  right: 20px;
+}
+
+.chevron-icon {
+  width: 24px;
+  height: 24px;
+  stroke: #fff;
+}
+
+  </style>
+</head>
+<body>
+  <div class="carousel-container">
+    <div class="carousel">
+      <div class="carousel-content">
+        <div class="carousel-item">
+          <div class="image-container">
+            <img src="https://via.placeholder.com/800x600" alt="Movie Thumbnail">
+            <button class="play-button">
+              <svg class="play-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="6 3 20 12 6 21 6 3"></polygon>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="image-container">
+            <img src="https://via.placeholder.com/800x600" alt="Movie Thumbnail">
+            <button class="play-button">
+              <svg class="play-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="6 3 20 12 6 21 6 3"></polygon>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="image-container">
+            <img src="https://via.placeholder.com/800x600" alt="Movie Thumbnail">
+            <button class="play-button">
+              <svg class="play-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="6 3 20 12 6 21 6 3"></polygon>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="image-container">
+            <img src="https://via.placeholder.com/800x600" alt="Movie Thumbnail">
+            <button class="play-button">
+              <svg class="play-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="6 3 20 12 6 21 6 3"></polygon>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="image-container">
+            <img src="https://via.placeholder.com/800x600" alt="Movie Thumbnail">
+            <button class="play-button">
+              <svg class="play-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="6 3 20 12 6 21 6 3"></polygon>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <!-- Repeat the above block for each carousel item -->
+      </div>
+      <button class="carousel-previous">
+        <svg class="chevron-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M15 18L9 12L15 6"></path>
+        </svg>
+      </button>
+      <button class="carousel-next">
+        <svg class="chevron-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 18L15 12L9 6"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const carouselContent = document.querySelector('.carousel-content');
+    const items = carouselContent.querySelectorAll('.carousel-item');
+    const previousButton = document.querySelector('.carousel-previous');
+    const nextButton = document.querySelector('.carousel-next');
+  
+    let currentIndex = 0;
+    const totalItems = items.length;
+    const autoplaySpeed = 1 * 6 * 1000;
+  
+    function addClass(item) {
+      item.children[0].style.height = `90%`
+      item.classList.add('active');
+    }
+
+    function removeClass(item) {
+      item.children[0].style.height = `70%`
+      item.classList.remove('active');
+    }
+
+    function calculateOffset(index) {
+      return 25 - 60 * index;
+    }
+
+    function showItem(index) {
+      addClass(items[index]);
+      const offset = calculateOffset(index);
+      carouselContent.style.transform = `translateX(${offset}%)`;
+    }
+  
+    function showNextItem() {
+      removeClass(items[currentIndex]);
+      currentIndex = (currentIndex + 1) % totalItems;
+      showItem(currentIndex);
+    }
+    
+    function showPreviousItem() {
+      removeClass(items[currentIndex]);
+      currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+      showItem(currentIndex);
+    }
+
+
+  
+    previousButton.addEventListener('click', showPreviousItem);
+    nextButton.addEventListener('click', showNextItem);
+  
+    // Autoplay functionality
+    //setInterval(showNextItem, autoplaySpeed);
+  
+    // Initial display
+    showItem(currentIndex);
+  });
+  </script>
+</body>
+</html>

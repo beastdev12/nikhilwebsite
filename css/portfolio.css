@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-items: center;
     align-items: center;
-    background-color: rgb(241, 241, 241);
+    background-color: rgb(26, 26, 26);
     z-index: 3;
     min-height: 100vh;
 }
@@ -83,8 +83,8 @@
 }
 
 .portfolio .container:hover .image-holder .image {
-    border-radius: 3%;
-    transform: translateY(-28%);
+    border-radius: 3% 3% 0% 0%;
+    transform: translateY(-14%);
 }
 
 .description{
@@ -100,7 +100,7 @@
     width: 18.5%;
     height: 0%;
     background-color: rgba(41, 41, 41, 0.95);
-    border-radius: 5%;
+    border-radius: 0% 0% 5% 5%;
     color: white;
     padding: 12px;
     box-sizing: border-box;
@@ -114,14 +114,7 @@
     font-weight: 600;
 }
 
-.role-time {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 5px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 300;
-}
+
 
 .role {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -130,12 +123,13 @@
 }
 
 .time{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 12pt;
 }
 
 .container:hover .description {
     opacity: 1;
-    height: 25%;
+    height: 15%;
 }
 
 @media (max-width: 767px) {

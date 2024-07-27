@@ -13,7 +13,6 @@ var hidden = "hidden"
 
 function CheckDeviceWidth() {
     let DeviceWidth = window.innerWidth;
-    console.log(DeviceWidth);
     if (DeviceWidth < 767) {
         
         menuIcon.classList.remove(hidden);
