@@ -79,7 +79,7 @@
   -webkit-flex-shrink: 0;
   -ms-flex: 0 0 auto;
   flex-shrink: 0;
-  width: 100%;
+  width: 80%;
   height: 100%;
   position: relative;
 }
@@ -478,6 +478,6 @@ button.swiper-pagination-bullet {
 .swiper-button.style-3:hover, .scroll-button.style-3:hover{transition-delay: 0s; -webkit-transition-delay: 0s;}
 
 .scroll-button.style-3{position: absolute; bottom: 30px; width: 40px; height: 60px; left: 50%; margin-left: -20px; background: url(../img/arrow3-scroll.png) center bottom no-repeat; cursor: pointer; color: #000;}
-.scroll-button.style-3.light{color: #fff; background-image: url(../img/arrow3-scroll-light.png);}
+.scroll-button.style-3.light{color: #fff; background-image: url(../../assets/icons/arrow3-scroll-gold.png);}
 .homepage-14-slider .scroll-button.style-3{bottom: -100px;}
 .scroll-button.style-3:hover{background-position: center bottom 10px;}

@@ -328,7 +328,7 @@ header.fixed.light.scrolled{background: #222;}
 header.white{background: #fff;}
 header.border-bottom{border-bottom: 1px #e3e3e3 solid;}
 .logo:hover{box-shadow: 2px 0px 6px rgb(97, 97, 97);text-shadow: 2px 0px 6px rgb(120, 120, 120);}
-.logo{display: inline-block; height: 30px;width: 30px; line-height: 40px; margin-top: -20px; position: relative; top: 20px; vertical-align: bottom;}
+.logo{font-family: "DM Sans", sans-serif; color: #dbdbdb;}
 .logo-text{width:150px;font-size: 15px;font-family: 'Montserrat', serif;color: #c6c6c6;position: relative; top: -30px;left: 45px;display: inline-flex;}
 .title-text{width:150px;font-size: 17px; color: #c6c6c6;position: relative; top: -45px;left: 45px;display: inline-flex; font-family: 'Montserrat', sans-serif;}
 .logo img{display: inline-block; vertical-align: middle; max-height: 30px; width: auto; top: -8px; position: relative;}
@@ -479,11 +479,11 @@ footer.light .copyright a{color: #222;}
 .follow .container{display: flex; justify-content: center;}
 .follow{font-size: 0;}
 .follow .title{margin: 0 5px; color: #fff; font-size: 13px; vertical-align: bottom; line-height: 30px;}
-.follow .entry{width: 30px; height: 30px; text-align: center; color: #6f6f6f; border-radius: 50%; -webkit-border-radius: 50%; display: inline-block; margin: 0 5px; position: relative; border: 1px transparent solid; background: #111; font-size: 12px; vertical-align: bottom; align-items: center;}
+.follow .entry{ text-align: center; color: #6f6f6f; border-radius: 50%; -webkit-border-radius: 50%; display: inline-block; margin: 0 5px; position: relative; border: 1px transparent solid; background: #111; font-size: 12px; vertical-align: bottom; align-items: center;}
 .follow .entry:last-child{margin-right: 0;}
 .follow .entry .fa{position: relative; line-height: 28px;}
 .follow .entry:before{position: absolute; border-radius: 50%; -webkit-border-radius: 50%; left: -2px; top: -2px; right: -2px; bottom: -2px; content: ""; background: #fff; transform: scale(0); -webkit-transform: scale(0);}
-.follow .entry:hover:before{transform: scale(1); -webkit-transform: scale(1);}
+.follow .entry:hover:before{transform: scale(0); -webkit-transform: scale(0);}
 .follow .entry:hover{color: #111;}
 .follow .entry.ins:before{background-image: url(../img/insta-b1.png);}
 .follow .entry.ltr:before{background-image: url(../img/letter-b1.png);}
@@ -494,9 +494,8 @@ footer.light .copyright a{color: #222;}
 .follow img{height: 16px; width: 16px;}
 
 
-.follow.style-1 .entry{color: #2f2f2f; background: none;}
-/*.follow.style-1 .entry:hover{color: #fff; }*/
-.follow.style-1 .entry.tw:hover{color: #fff;}
+.follow.style-1 .entry{color: #2f2f2f; background: none; transition: all 0.5s ease;}
+.follow.style-1 .entry:hover{text-decoration: underline; text-decoration-color: #FFCE57; color: #FFCE57;}
 .follow.style-1 .entry.ins:before{background: #2f2f2f; background-image: url(../img/insta-w.png);}
 .follow.style-1 .entry.ltr:before{background: #2f2f2f; background-image: url(../img/letter-w.png);}
 .follow.style-1 .entry.imd:before{background: #2f2f2f; background-image: url(../img/imdb-w.png);}
@@ -681,7 +680,7 @@ video{position: absolute; right: 0; top: 0; min-width: 100%; min-height: 100%; w
 .full-size-banner-entry.style-1:before{display: none;}
 .full-size-banner-entry.style-2:before{background: rgba(0,0,0,.2);}
 .valign-text-wrapper{padding: 0 15px; width: 100%;}
-.banner-max-width{max-width: 570px; margin: 0 auto;}
+.banner-max-width{max-width: 570px; margin: 0 5%;}
 .team-entry{max-width: 370px; margin: 0 auto;}
 .team-thumbnail-wrapper{position: relative; overflow: hidden;}
 .team-thumbnail-wrapper .follow{position: absolute; left: 0; top: 0; width: 100%;}
@@ -889,3 +888,11 @@ div[class*="col"]:last-child .contacts-entry{border: none;}
 	.sorting-menu.style-1 .responsive-filtration-toggle li{display: block; margin-top: 5px;}
 }
 
+.h2.yellow {
+	color: #FFCE57;
+	margin: 0 5%;
+}
+
+.gold {
+	color: #FFCE57;
+}

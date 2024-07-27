@@ -11,7 +11,9 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;800&display=swap" rel="stylesheet">
-    <title>Document</title>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,700;1,9..40,700&display=swap" rel="stylesheet">
+    <title>Nikhil Chauhan</title>
+
 </head>
 <body class="dark">
     <!--<main class="dark">
@@ -25,7 +27,7 @@
 		</div>
 		<div class="div"></div>	
     </main>-->
-	<div class="page-content">
+	<div class="page-content home">
 		<div class="navMobileMenu hidden">
 			<div class="socialMediaLinks">
 				<div class="instagram-mob"><img src="assets/icons/insta-w1.webp" alt=""></div>
@@ -37,16 +39,16 @@
 		</div>
 		<header class="navbar">
 			<div class="logo">
-				<a href="http://">
-					<img src="assets/logo.jpg" alt="Tech Logo">
-					<div class="logotext">NIKHIL CHAUHAN</div>
+				<a href="#">
+					<div class="logotext dm-sans">NIKHIL CHAUHAN</div>
 				</a>
+				<div class="logotext-under">Film Editor</div>
 			</div>
 			<nav class="nav-links">
 			  <ul>
-				<li><a href="/">Home</a></li>
-				<li><a href="about/">About</a></li>
-				<li><a href="contacts/">Contact</a></li>
+				<li><a class="nav-home" href="/">Home</a></li>
+				<li><a class="nav-about" href="/about/">About</a></li>
+				<li><a class="nav-contact" href="/contacts/">Contact</a></li>
 			  </ul>
 			</nav>
 			<input type="checkbox" id="checkbox" class="menu">
@@ -55,85 +57,168 @@
 				<div class="bars" id="bar2"></div>
 				<div class="bars" id="bar3"></div>
 			</label>
-			
-
 		</header>
 
+		<!--  // Old SLider
 		<div class="movie-preview-slider">
-			<div id="scrollLeftButton" ><img src="assets/icons/arrow2-left.png" alt=""></div>
-			<div id="scrollRightButton" ><img src="assets/icons/arrow2-right.png" alt=""></div>
-			<!--<button id="scrollLeftButton"><img src="assets/icons/arrow1-left.png" alt=""></button>
+				<div id="scrollLeftButton" ><img src="assets/icons/arrow2-left.png" alt=""></div>
+				<div id="scrollRightButton" ><img src="assets/icons/arrow2-right.png" alt=""></div>
+
+				<div class="slider-background-container">
+					<div class="silder-background active" id="item-1"><img src="assets/img/ordekh-swapna.webp" alt=""></div>
+					<div class="silder-background" id="item-2"><img src="assets/img/ordekh-swapna.webp" alt=""></div>
+					<div class="silder-background" id="item-3"><img src="assets/img/ordekh-swapna.webp" alt=""></div>
+				</div>
+				<div class="slider-container snaps-inline">
+					<div class="slider-content" data-filter="item-1" data-url="assets/img/">
+						<img src="assets/img/ordekh-swapna.webp" alt="Content Image">
+						<span class="overlay">
+							<span class="content">
+								<div class="play-button">▶</div>
+								<div class="title-text">Ordekh Swapna</div>
+							</span>
+						</span>
+					</div>
+					<div class="slider-content" data-filter="item-2">
+						<img src="assets/img/ordekh-swapna.webp" alt="Content Image">
+						<span class="overlay">
+							<span class="content">
+								<div class="play-button">▶</div>
+								<div class="title-text">Ordekh Swapna</div>
+							</span>
+						</span>
+					</div>
+					<div class="slider-content" data-filter="item-3">
+						<img src="assets/img/ordekh-swapna.webp" alt="Content Image">
+						<span class="overlay">
+							<span class="content">
+								<div class="play-button">▶</div>
+								<div class="title-text">Ordekh Swapna</div>
+							</span>
+						</span>
+					</div>
+					<div class="slider-content" data-filter="item-4">
+						<img src="assets/img/ordekh-swapna.webp" alt="Content Image">
+						<span class="overlay">
+							<span class="content">
+								<div class="play-button">▶</div>
+								<div class="title-text">Ordekh Swapna</div>
+							</span>
+						</span>
+					</div>
+					<div class="slider-content" data-filter="item-5">
+						<img src="assets/img/ordekh-swapna.webp" alt="Content Image">
+						<span class="overlay">
+							<span class="content">
+								<div class="play-button">▶</div>
+								<div class="title-text">Ordekh Swapna</div>
+							</span>
+						</span>
+					</div>
+					<div class="slider-content" data-filter="item-6">
+						<img src="assets/img/ordekh-swapna.webp" alt="Content Image">
+						<span class="overlay">
+							<span class="content">
+								<div class="play-button">▶</div>
+								<div class="title-text">Ordekh Swapna</div>
+							</span>
+						</span>
+					</div>
+				</div>
+				
+				
+			</div>
+		-->
+		<!--<button id="scrollLeftButton"><img src="assets/icons/arrow1-left.png" alt=""></button>
 			<button id="scrollRightButton"><img src="assets/icons/arrow1-right.png" alt=""></button>-->
-			<div class="slider-background-container">
-				<div class="silder-background active" id="item-1"><img src="assets/img/ordekh-swapna.webp" alt=""></div>
-				<div class="silder-background" id="item-2"><img src="assets/img/ordekh-swapna.webp" alt=""></div>
-				<div class="silder-background" id="item-3"><img src="assets/img/ordekh-swapna.webp" alt=""></div>
-				<!-- Add more background items as needed -->
+	
+		<!-- Add more background items as needed -->
+
+		<div class="carousel-container">
+			<div class="carousel">
+			  <div class="carousel-content">
+
+				<div class="carousel-item" dataUrl="assets/img/ordekh-swapna.webp">
+				  <div class="image-container">
+					<img src="img/ordekh-swapna-port.webp" alt="Movie Thumbnail">
+					<button class="play-button">
+					  <svg class="play-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+						<polygon points="6 3 20 12 6 21 6 3"></polygon>
+					  </svg>
+					</button>
+				  </div>
+				  <div class="under-text">
+					<div class="slider-title gold">Showreel</div>
+					<div class="slider-description">Editor</div>
+				  </div>
+				</div>
+
+				<div class="carousel-item" dataUrl="assets/img/ordekh-swapna.webp">
+				  <div class="image-container">
+					<img src="img/ordekh-swapna-port.webp" alt="Movie Thumbnail">
+					<button class="play-button">
+					  <svg class="play-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+						<polygon points="6 3 20 12 6 21 6 3"></polygon>
+					  </svg>
+					</button>
+				  </div>
+				  <div class="under-text">
+					<div class="slider-title gold">Furs And Strands</div>
+					<div class="slider-description">Assistant Editor</div>
+				  </div>
+				</div>
+
+				<div class="carousel-item" dataUrl="assets/img/ordekh-swapna.webp">
+				  <div class="image-container">
+					<img src="img/ordekh-swapna-port.webp" alt="Movie Thumbnail">
+					<button class="play-button">
+					  <svg class="play-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+						<polygon points="6 3 20 12 6 21 6 3"></polygon>
+					  </svg>
+					</button>
+				  </div>
+				  <div class="under-text">
+					<div class="slider-title gold">The Slow Dance Of Seven Sisters</div>
+					<div class="slider-description">Editor</div>
+				  </div>
+				</div>
+
+				<div class="carousel-item" dataUrl="assets/img/ordekh-swapna.webp">
+					<div class="image-container">
+					  <img src="img/ordekh-swapna-port.webp" alt="Movie Thumbnail">
+					  <button class="play-button">
+						<svg class="play-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+						  <polygon points="6 3 20 12 6 21 6 3"></polygon>
+						</svg>
+					  </button>
+					</div>
+					<div class="under-text">
+					  <div class="slider-title gold">Grey</div>
+					  <div class="slider-description">Editor</div>
+					</div>
+				  </div>
+
+				<!-- Repeat the above block for each carousel item -->
+			  </div>
+			  <button class="carousel-previous">
+				<svg class="chevron-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+				  <path d="M15 18L9 12L15 6"></path>
+				</svg>
+			  </button>
+			  <button class="carousel-next">
+				<svg class="chevron-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+				  <path d="M9 18L15 12L9 6"></path>
+				</svg>
+			  </button>
 			</div>
-			<div class="slider-container snaps-inline">
-				<div class="slider-content" data-filter="item-1" data-url="assets/img/">
-					<img src="assets/img/ordekh-swapna.webp" alt="Content Image">
-					<span class="overlay">
-						<span class="content">
-							<div class="play-button">▶</div>
-							<div class="title-text">Ordekh Swapna</div>
-						</span>
-					</span>
-				</div>
-				<div class="slider-content" data-filter="item-2">
-					<img src="assets/img/ordekh-swapna.webp" alt="Content Image">
-					<span class="overlay">
-						<span class="content">
-							<div class="play-button">▶</div>
-							<div class="title-text">Ordekh Swapna</div>
-						</span>
-					</span>
-				</div>
-				<div class="slider-content" data-filter="item-3">
-					<img src="assets/img/ordekh-swapna.webp" alt="Content Image">
-					<span class="overlay">
-						<span class="content">
-							<div class="play-button">▶</div>
-							<div class="title-text">Ordekh Swapna</div>
-						</span>
-					</span>
-				</div>
-				<div class="slider-content" data-filter="item-4">
-					<img src="assets/img/ordekh-swapna.webp" alt="Content Image">
-					<span class="overlay">
-						<span class="content">
-							<div class="play-button">▶</div>
-							<div class="title-text">Ordekh Swapna</div>
-						</span>
-					</span>
-				</div>
-				<div class="slider-content" data-filter="item-5">
-					<img src="assets/img/ordekh-swapna.webp" alt="Content Image">
-					<span class="overlay">
-						<span class="content">
-							<div class="play-button">▶</div>
-							<div class="title-text">Ordekh Swapna</div>
-						</span>
-					</span>
-				</div>
-				<div class="slider-content" data-filter="item-6">
-					<img src="assets/img/ordekh-swapna.webp" alt="Content Image">
-					<span class="overlay">
-						<span class="content">
-							<div class="play-button">▶</div>
-							<div class="title-text">Ordekh Swapna</div>
-						</span>
-					</span>
-				</div>
-			</div>
-		</div>
+		  </div>
 
 		<div class="portfolio-wrapper">
             <div class="sorter">
-                    <li><a class="active" data-filter="*" onclick="filterAndSetActive(this, '*')">All</a></li>
-                    <li><a class="" data-filter="type-1" onclick="filterAndSetActive(this, 'type-1')">Feature Film</a></li>
-                    <li><a class="" data-filter="type-2" onclick="filterAndSetActive(this, 'type-2')">Short Film</a></li>
-                    <li><a class="" data-filter="type-3" onclick="filterAndSetActive(this, 'type-3')">Documentary</a></li>
+                    <li><a class="sorter-type active gold" data-filter="*" onclick="filterAndSetActive(this, '*')">All</a></li>
+                    <li><a class="sorter-type" data-filter="type-1" onclick="filterAndSetActive(this, 'type-1')">Feature Film</a></li>
+                    <li><a class="sorter-type" data-filter="type-2" onclick="filterAndSetActive(this, 'type-2')">Short Film</a></li>
+                    <li><a class="sorter-type" data-filter="type-3" onclick="filterAndSetActive(this, 'type-3')">Documentary</a></li>
             </div>
             
             <div class="portfolio">
@@ -221,6 +306,13 @@
                 </div>
             </div>
         </div>
+
+		<div class="footer">
+			
+		</div>
+		
+	</div>
+	<div class="page-content about">
 		
 	</div>
 	
@@ -229,6 +321,7 @@
 	<script src="js/HomepageSlider.js"></script>
 	<script src="js/portfolio.js"></script>
 	<script src="js/menu.js"></script>
+	<script src="js/slider.js"></script>
 	<!--<script src="js/scriptsPort.js"></script>-->
 </body>
 </html>
