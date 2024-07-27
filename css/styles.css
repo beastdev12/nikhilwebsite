@@ -763,12 +763,6 @@
   color: #fff;
 }
 
-.sorter-type:hover {
-  text-shadow: 1px 1px 25px rgba(255, 255, 255, 1),
-             -1px -1px 25px rgba(235, 229, 56, 1);
-}
-
-
 
 /* Font Classes*/
 
