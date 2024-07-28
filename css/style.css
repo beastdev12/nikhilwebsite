@@ -294,7 +294,7 @@ body.mobile .mouseover .mouseover-helper-frame, body.mobile .mouseover .mouseove
 .input-wrapper.light.icon.focus .icon{color: #aeaeae;}
 /**/
 .simple-slider{height: 750px; height: 80vh;}
-.simple-slider .swiper-slide{background-size: cover; background-position: center top;}
+.simple-slider .swiper-slide{background-size: cover; background-position: center center; background-repeat: no-repeat;}
 .simple-slider.style-1{height: 600px;}
 .simple-slider.style-1 .swiper-slide:before{content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,.3);}
 /**/

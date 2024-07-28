@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', function () {
     let currentIndex = 0;
     const totalItems = items.length;
     const autoplaySpeed = 1 * 6 * 1000; // min : s : ms
-    const offsetStart = 15;
-    const offsetsSkip = 60;
+    const offsetStart = 25;
+    const offsetsSkip = 40;
 
     function CheckDeviceWidth() {
         let DeviceWidth = window.innerWidth;
@@ -22,23 +22,25 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   
     function addClass(item) {
-      item.style.minWidth = `70%`
+      item.style.minWidth = `50%`
       if (CheckDeviceWidth()){
-        item.children[0].style.height = `110%`
+        item.children[0].style.height = `100%`
       }else {
-        item.children[0].style.height = `60%`
+        item.children[0].style.height = `50%`
       }
       item.classList.add('active');
       item.querySelector('.play-button').style.height = `64px`;
       item.querySelector('.play-button').style.width = `64px`;
-  }
-  
-  function removeClass(item) {
-      item.style.minWidth = `60%`
+      item.querySelector('.under-text').style.opacity = 1;
+    }
+    
+    function removeClass(item) {
+      item.style.minWidth = `40%`
+      item.querySelector('.under-text').style.opacity = 0;
       if (CheckDeviceWidth()){
-        item.children[0].style.height = `60%`
-      }else {
         item.children[0].style.height = `50%`
+      }else {
+        item.children[0].style.height = `40%`
       }
       item.querySelector('.play-button').style.height = `12px`;
       item.querySelector('.play-button').style.width = `12px`;

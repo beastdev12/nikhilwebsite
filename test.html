@@ -4,6 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Carousel</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <style>
+        .owl-carousel .item-carousel {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .owl-carousel .client-item img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
@@ -19,6 +33,7 @@ body {
 }
 
 .carousel-container {
+  display: none;
     position: relative;
     width: 100%;
     max-width: 100%;
@@ -119,6 +134,7 @@ body {
   </style>
 </head>
 <body>
+  
   <div class="carousel-container">
     <div class="carousel">
       <div class="carousel-content">
@@ -185,7 +201,48 @@ body {
         </svg>
       </button>
     </div>
-  </div>
+  </div>`
+  <div class="clients-shortcode-wrap carousel">
+    <div class="haru-carousel clients-list owl-carousel owl-theme"
+        data-items="5"
+        data-items-tablet="3"
+        data-items-mobile="2"
+        data-margin="20"
+        data-autoplay="false"
+        data-slide-duration="6000"
+        data-loop="true">
+        <div class="item-carousel">
+            <div class="client-item style_1">
+                <img decoding="async" src="https://lh3.googleusercontent.com/fife/ALs6j_HD57iZVNLn4x64FalSK7w62DcHKQA7fpTmXuCb5et39G8KeHL3BKqBT1wM0OL1AXfYQV1L1ur4kf3zN77lccR1mRJLF0W0j6liBuOs257ecQVP2Z7m2gzRDv-mxTGIs-M2VLkrrRjVWWRMG_xDHt8H4AT3jahUBvg7YwhL0YBZ5Z717ow7t8WI-sG9_xPSyoMcs5iKpB8FFYFRY1dj_co9YFJLh_uK4IUL-hJM5o9_o90bUfZYikB2O34_MdLdF__FqQ9-Y4rRlWS4-ikNpcgpF058kS6ZjmNB518AWBByHH4ZlhXmRz5TRdjESnpbbcMk6-IcHivVS54lUFHacy2xn3TqTjdDTlEgFQD9lTXZi9qlo21IWyoGGgPjulJW_seBRpYJY2vcptA0ESFPEm7FMV1zq0IJrpS_7QWZ5eqCpzSKzGpIb4-veq1FLwUlrYRbfoMX-mrICPf737vTH5v3wDxIJ4y0Sdae8lqsKmUIrSltJqm7ft6Jod1gJMOsODvaemGk26bLrJAeh8SMv9h8mbW3wojb30OsOH_zVPJZHFYAveoZsLsGnkcMvuzjPmefFVh0cVUPuHot6A_xVA4uUPCc2thcA8F_JYWvsCK3IyBi27cG5ByQ75qrBE_cxXes1EZLsfUZz7I5sGuaYBA98fj6PtCUBIEkNMpe9IJWBNPRcm_N_wXpJAgAFU4Jz1WOPOVDziHp8WeIGY1QI0I6Am7j5XUWG-1NRuwfKqanEAIMVj4M3vNvEEHT0aB62jkWKMym8AyPsJCxyE_ANuXCT0OPFpsPNjwC7E55ml41LEhmE-mXu7YgMKlyvpZTUEBr3pebEvzpsyJfzFXyf7xF_6dp55YPM8Y5eSyPhJ7EsgfzCF3uj30xlMkEU_M-s6jGS3B7T0QlOl2OhUsDEgJH8nkCffsmCYLwh0SAG74Q5M0bOwRlezW74PEAnIOBXskNgcaBx22VHD2x28Po2tJfwFfEc0q42_6gVSsA7R6HI2AidDnQgzBScRkpM-voNBMEgtYsJgG7MZ7HJdRRULpGFcYNDdN4yjnDXvMb_POV-IX292r3arQYO3m09o6IXI-s1G4QAA37t7jEQ8rtSFowy8HKvDom15RYqrkIw1CqeybXVnb01cQTNJOXAAtQxrYODtGjnX5lkbRHB_ksDk-ALJtJi4XGTzs6RmuoqRn7cXuBt99PsJ4aIMNhRAvHzg0Y-RYs9_cJzpyKrC46PRupRiGPoMJxQboA8ewXMxlkkW5id9byFuX1o8pVQXHmiuEeVp-SmO-jWc_X0N9pzU4wSSv6UB6w1l9TkKeaiX0MT-x_jHJEV6STOcapHAa3g4FDppJaui4zKF4L0l2Zg9H4A3bmNNHkUX6L0eFd6hIinK3SNPPd1-w0bORr7fEGF0P5rlXdV8T6LiojA92WBU6pMpE_JsCpT5YPwpneMrLhiuN8NNg8ZIfnK4xBrPFD7roHl-PV0TFr5yTvEFsWBXDJWVK3cLZSX-Lsuube1gz09L6tAJMr1ADb3tXkM-wcbG_gPp37ST4zX6pNaqdBg01YkaFg-aLd_Om8Rj7kzsyXTdZONawn4v1L9AhUfTc_iT4YpIyYfzeVzECE_lKgjg=w1366-h607" alt="Jeevika">
+            </div>
+        </div>
+        <div class="item-carousel">
+            <div class="client-item style_1">
+                <img decoding="async" src="path/to/logo-achtungberlin.png" alt="Achtung Berlin">
+            </div>
+        </div>
+        <div class="item-carousel">
+            <div class="client-item style_1">
+                <img decoding="async" src="https://lh3.googleusercontent.com/fife/ALs6j_HD57iZVNLn4x64FalSK7w62DcHKQA7fpTmXuCb5et39G8KeHL3BKqBT1wM0OL1AXfYQV1L1ur4kf3zN77lccR1mRJLF0W0j6liBuOs257ecQVP2Z7m2gzRDv-mxTGIs-M2VLkrrRjVWWRMG_xDHt8H4AT3jahUBvg7YwhL0YBZ5Z717ow7t8WI-sG9_xPSyoMcs5iKpB8FFYFRY1dj_co9YFJLh_uK4IUL-hJM5o9_o90bUfZYikB2O34_MdLdF__FqQ9-Y4rRlWS4-ikNpcgpF058kS6ZjmNB518AWBByHH4ZlhXmRz5TRdjESnpbbcMk6-IcHivVS54lUFHacy2xn3TqTjdDTlEgFQD9lTXZi9qlo21IWyoGGgPjulJW_seBRpYJY2vcptA0ESFPEm7FMV1zq0IJrpS_7QWZ5eqCpzSKzGpIb4-veq1FLwUlrYRbfoMX-mrICPf737vTH5v3wDxIJ4y0Sdae8lqsKmUIrSltJqm7ft6Jod1gJMOsODvaemGk26bLrJAeh8SMv9h8mbW3wojb30OsOH_zVPJZHFYAveoZsLsGnkcMvuzjPmefFVh0cVUPuHot6A_xVA4uUPCc2thcA8F_JYWvsCK3IyBi27cG5ByQ75qrBE_cxXes1EZLsfUZz7I5sGuaYBA98fj6PtCUBIEkNMpe9IJWBNPRcm_N_wXpJAgAFU4Jz1WOPOVDziHp8WeIGY1QI0I6Am7j5XUWG-1NRuwfKqanEAIMVj4M3vNvEEHT0aB62jkWKMym8AyPsJCxyE_ANuXCT0OPFpsPNjwC7E55ml41LEhmE-mXu7YgMKlyvpZTUEBr3pebEvzpsyJfzFXyf7xF_6dp55YPM8Y5eSyPhJ7EsgfzCF3uj30xlMkEU_M-s6jGS3B7T0QlOl2OhUsDEgJH8nkCffsmCYLwh0SAG74Q5M0bOwRlezW74PEAnIOBXskNgcaBx22VHD2x28Po2tJfwFfEc0q42_6gVSsA7R6HI2AidDnQgzBScRkpM-voNBMEgtYsJgG7MZ7HJdRRULpGFcYNDdN4yjnDXvMb_POV-IX292r3arQYO3m09o6IXI-s1G4QAA37t7jEQ8rtSFowy8HKvDom15RYqrkIw1CqeybXVnb01cQTNJOXAAtQxrYODtGjnX5lkbRHB_ksDk-ALJtJi4XGTzs6RmuoqRn7cXuBt99PsJ4aIMNhRAvHzg0Y-RYs9_cJzpyKrC46PRupRiGPoMJxQboA8ewXMxlkkW5id9byFuX1o8pVQXHmiuEeVp-SmO-jWc_X0N9pzU4wSSv6UB6w1l9TkKeaiX0MT-x_jHJEV6STOcapHAa3g4FDppJaui4zKF4L0l2Zg9H4A3bmNNHkUX6L0eFd6hIinK3SNPPd1-w0bORr7fEGF0P5rlXdV8T6LiojA92WBU6pMpE_JsCpT5YPwpneMrLhiuN8NNg8ZIfnK4xBrPFD7roHl-PV0TFr5yTvEFsWBXDJWVK3cLZSX-Lsuube1gz09L6tAJMr1ADb3tXkM-wcbG_gPp37ST4zX6pNaqdBg01YkaFg-aLd_Om8Rj7kzsyXTdZONawn4v1L9AhUfTc_iT4YpIyYfzeVzECE_lKgjg=w1366-h607" alt="Encounters">
+            </div>
+        </div>
+        <div class="item-carousel">
+            <div class="client-item style_1">
+                <img decoding="async" src="path/to/logo-sedona.png" alt="Sedona">
+            </div>
+        </div>
+        <div class="item-carousel">
+            <div class="client-item style_1">
+                <img decoding="async" src="path/to/logo-selection.png" alt="Selection">
+            </div>
+        </div>
+        <div class="item-carousel">
+            <div class="client-item style_1">
+                <img decoding="async" src="path/to/logo-encounter.png" alt="Encounters">
+            </div>
+        </div>
+    </div>
+</div>
   <script>
   document.addEventListener('DOMContentLoaded', function () {
     const carouselContent = document.querySelector('.carousel-content');
@@ -241,5 +298,29 @@ body {
     showItem(currentIndex);
   });
   </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".haru-carousel").owlCarousel({
+            items: 5,
+            margin: 20,
+            autoplay: false,
+            loop: false,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                768: {
+                    items: 3
+                },
+                1024: {
+                    items: 5
+                }
+            }
+        });
+    });
+</script>
 </body>
 </html>
