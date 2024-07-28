@@ -758,23 +758,3 @@
 .hidden {
     display: none;
 }
-
-.sorter-type {
-  color: #fff;
-}
-
-/* Font Classes*/
-
-.dm-sans> {
-  font-family: "DM Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-}
-
-/*  Color Classes */
-.gold {
-  color: #FFCE57;
-  text-decoration-color: #FFCE57;
-}
-
