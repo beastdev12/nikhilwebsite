@@ -7,6 +7,14 @@
     z-index: 3;
     min-height: 100vh;
 }
+.portfolio-wrapper::before {    
+    content: '';
+  position: absolute;
+  transform: translate3d(0px, -50%, 0px);
+  height: 5%;
+  width: 2px;
+  background-color: #FFCE57;
+}
 
 .sorter {
     display: flex;
@@ -130,6 +138,11 @@
 .container:hover .description {
     opacity: 1;
     height: 15%;
+    max-height: 320px;
+}
+
+.container:hover .description {
+    max-height: 320px;
 }
 
 @media (max-width: 767px) {
