@@ -1,198 +1,284 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="I'm Nikhil Chauhan, film editor of some things you've seen and some things you should see.">
     <meta property="og:title" content="Nikhil Chauhan" />
     <meta property="og:url" content="www.nikhilchauhan.com" />
-    <meta property="og:image" content="https://i.imgur.com/ksheUZH.jpegp">
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta property="og:image" content="https://i.imgur.com/ksheUZH.jpeg">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="format-detection" content="telephone=no" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no, minimal-ui"/>
-    
-    <!-- fonts collection 8 -->
+
+    <!-- Fonts Collection 8 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="css/bootstrap.extension.css" rel="stylesheet" type="text/css" />
-    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-    <link href="css/style-2.css" rel="stylesheet" type="text/css" />
-    <link rel="shortcut icon" href="https://i.imgur.com/FFB7EXx.png" />
-  	<title>Nikhil Chauhan</title>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/141b6b4d84.js" crossorigin="anonymous"></script>
+    <title>Nikhil Chauhan</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .intro-text.full {
+            text-align: center;
+        }
+        .intro-text.full p {
+            margin: 0;
+            max-width: 100%;
+        }
+
+        .intro {
+            height: 70vh;
+            background-image: url('https://lh3.googleusercontent.com/fife/ALs6j_HAjP8AjdBvXTRmQ1KmcgM80Aoa68addnQs0x0zwg7kn9K9dZhaPWfh_u1CzZg0776PoHHR1RsikGvFDJKFB-lP1lftZYITIfwJIghSXtKpdyVPXj3DW_9WswVKAEEvlL_eeNuZIush-LWuynLgpPYwrLkUiBTYwY6urpPskRycrVjRF9XgFVeEymKFNt-duXZy-XmnnVvaaN05TCESJvfet8tY95Z9ke1cNFn-9gw8AMQYfK4OTD6r1_-Lw3zhC6bK5CX1nHBipXvykbUIjCUA_juYHeuSTa0boqgjA3ypq4KyqqEZLmCuhUGCV3yC3qo3JgnzHjfWe8ZYSCXh32LkjMHbtiKw36-3mdE2ETtjHpqb8NPOGW48YYInDk01Ea8qD-PLz_G2LSgFv1pzClVoZgZVO2RpB4XLFbI46tK2tj19ZEz0_7K4IIV_CvTyO6pw9_OkpkJ3_-jsYxp3iyW3ud5MTRz8CFd-Z53LVowg_NQCmKSTDdqMw-0NL-Ld1P_jU_7yNtlhgUTgIr6ms3cVoFB58OlXXw4vDWV5fxv0qW8sO8wXViuQgfA4ECHSU8snRnF6zQZawoItqelXDwi18wiCLtfa3auznVHwNqh7qezPVDV9Hk9aYACTJa92WurKNaQ3VeUKb1GrUdubJDmPY2__kg-eT3WWES4dih6o45EsFPOxidyoffWLmH0G3t46B6v3KMHH6sO94iCJaRP_4-ln_MzH7waAPg9rKVBdVrsOe1Iky6V3kaybCt2eq_N2QtuXmgFAv1mPp3cJjL2__HKC3Yisc7QJOZG28eoPBHWanjUwGN_IONuo9klbPsk9PUNYjGQmSOpED6dNv6bAaSZYJwWO0VPldl-0vAKZtMJ1v_2Sy7QSNp1r-zB6iN4fLPiXnddH89UR4987gruTK2oOaxoUvfEkV_lB547cgpu8H885jpRs9c76nw3RYUu-xbYAXbUc7fI1feIrNnVfJ8558fYoSygznz7Ea5C1vCYrhVd-qeZz5BziElZNDvu0LhUpdf8BTrNpriL3YGs7w-isPnvDfCnOeuWoa77-jTNbZl-zfXnYdUKutm8G5i8G0lnqeGyIWlXA6gxxJbfD08nyjxjQcorXOTvG86OVGOj_kDpdoqY0Mfv7lOS9q1-uLWIkJR_0Y0pd9wT314NUWxlHMNANlYjmG6utUdcqzjcXkNub1HHu56os1trzbcVB30eiLA0bScOCI60ymchA9SQ1EgbS9QPmTK8qQuRSZqXUF4-U1U6CVh3o3yaJLCs5RbjEIpow5AuGbzymguY_dxV9XWRN9w-gaH-lIBn597eI9bQpjU1A9y6bIZwB1xD_9kXXTczI9FQOv2bhR-OxnqjmgbC9VwQgXlmh8GC_DX_-08dZLsLtdHzkSceTxmkWAMMCX_LPp6fyiWl3LKQo80jFTghiAkok--xYXuVs4p2VWa954IMmmSGXs5rcIY-TnfZaPV7PQfmItN_jH7NiA5LAHqrVwBV0_s0gUCxmKABmYTYA5QwkQo-8tsPlZ4v1gY6U3dLQD7x0rlW9rbLfdyXcRRvpZKki9Kj0rqvmA7QWPVjaYW1YU0HIfhLjVfsyq7KHiXMAf1UJ6NM=w1366-h607');
+            background-position: center center;
+        }
+
+        .intro::after {
+            background: rgba(0, 0, 0, 0.75);
+        }
+
+        .contact-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 2% 5%;
+            background-color: #fff;
+            gap: 0 5%;
+        }
+
+        .contact-section::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translate3d(0px, -100%, 0px);
+            height: 50px;
+            width: 2px;
+            background-color: #FFCE57;
+        }
+
+        .contact-form {
+            flex: 1;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .contact-form h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #000;
+        }
+
+        .contact-form .input-group {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .contact-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #FFCE57;
+            border: none;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .contact-details {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .contact-details .detail-item {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .contact-details .detail-item i {
+            font-size: 24px;
+            color: #FFCE57;
+        }
+
+        .contact-details .detail-text {
+            display: flex;
+            flex-direction: column;
+            color: #000;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .contact-details .detail-text a {
+            position: relative;
+            text-decoration: none;
+            color: #000;
+        }
+
+        .contact-details .detail-text a::before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: #000;
+            transition: width 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+            bottom: -2px;
+        }
+
+        .contact-details .detail-text a:hover::before {
+            width: 100%;
+        }
+        
+        .contact-details .detail-title {
+            color: #000;
+            font-weight: bold;
+            margin-bottom: 5px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        @media (max-width: 768px) {
+            .contact-section {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+
+            .contact-form, .contact-details {
+                flex: none;
+                width: 100%;
+                max-width: 500px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .contact-form .input-group {
+                flex-direction: column;
+            }
+
+            .contact-form button {
+                font-size: 14px;
+            }
+
+            .contact-details .detail-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .contact-details .detail-text a::before {
+                bottom: -1px;
+            }
+        }
+    </style>
 </head>
-<body class="fonts-1">
-    <div id="content-block">
-        <!-- HEADER -->
-        <header class="type-2 fixed light">
-            <div class="empty-space col-xs-b15"></div>
-            <div class="wide-container">
-                <div class="row">
-                    <div class="col-xs-6 col-sm-2">
-                        <a class="logo" href="../index.html"><img src="../img/logo.webp" alt=""><div class="title-text">Nikhil Chauhan</div></a>
-                    </div>
-                    <div class="col-xs-6 col-sm-10 text-right">
+<body>
+    <header>
+        <div class="logo">
+            <a href="#">
+                <div class="logotext dm-sans">NIKHIL CHAUHAN</div>
+            </a>
+            <div class="logotext-under">Film Editor</div>
+        </div>
+        <nav class="nav-links">
+            <ul>
+                <li><a class="nav-home" href="../">Home</a></li>
+                <li><a class="nav-about" href="/">About</a></li>
+                <li><a class="nav-contact" href="../contacts/">Contact</a></li>
+            </ul>
+        </nav>
+        <input type="checkbox" id="checkbox" class="menu">
+        <label for="checkbox" class="toggle hidden">
+            <div class="bars" id="bar1"></div>
+            <div class="bars" id="bar2"></div>
+            <div class="bars" id="bar3"></div>
+        </label>
+    </header>
 
-                        <div class="navigation-wrapper">
+    <section class="intro">
+        <div class="intro-text full">
+            <h2 class="cormorant-garamond-bold-italic gold">Let's Make</h2>
+            <p class="cormorant-garamond-bold-upper">great things together</p>
+        </div>
+    </section>
 
-                            <a class="logo responsive"><img src="../img/logo.webp" alt=""></a>
-
-                            <div class="navigation-overflow">
-                                <nav class="text-left clearfix">
-                                    <ul>
-                                        <li>
-                                            <a href="../index.html">Home</a>
-                                            <span class="toggle-icon"></span>
-                                        </li>
-                                        <li>
-                                            <a href="http://www.nikhilchauhan.com/about">About</a>
-                                            <span class="toggle-icon"></span>
-                                        </li>
-                                        <li class="active">
-                                            <a href="http://www.nikhilchauhan.com/contacts">Contact</a>
-                                            <span class="toggle-icon"></span>
-                                        </li>
-
-                                    </ul>
-                                </nav>
-                            </div>
-
-                            <div class="follow style-1">
-                                <span class="title"><div class="mail-text fol">Follow Me:</div></span>>
-                                <a class="entry ins" href="https://www.instagram.com/nikkhil.mxf/" target="_blank"><img src="../img/insta-b.webp" alt=""></a>
-                                <a class="entry ltr" href="https://letterboxd.com/nikkhilrajput/" target="_blank"><img src="../img/letter-b.webp" alt=""></a>
-                                <a class="entry imd" href="https://www.imdb.com/name/nm13364719/?ref_=nv_sr_srsg_0" target="_blank"><img src="../img/imdb-b.webp" alt=""></a>
-                                <a class="entry tw" href="https://twitter.com/Badnick_28" target="_blank"><img src="../img/twit-b.webp" alt=""></a>
-                                <a class="entry in" href="https://www.linkedin.com/in/filmmaker-nikhil-chauhan/" target="_blank"><img src="../img/linkin-b.webp" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="hamburger-icon open-navigation">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </div>
+    <section class="contact-section">
+        <div class="contact-form">
+            <h2 class="cormorant-garamond-bold">Get in Touch!</h2>
+            <form method="post" id="dataForm">
+                <div class="input-group">
+                    <input type="text" name="name" placeholder="Your name *">
+                    <input type="email" name="email" placeholder="Your email *">
+                </div>
+                <input type="text" name="subject" placeholder="Subject">
+                <textarea name="message" placeholder="Message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <div class="contact-details">
+            <div class="detail-item">
+                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                <div class="detail-text">
+                    <div class="detail-title">ADDRESS</div>
+                    <div>SEC 44 Noida, Uttar Pradesh, India</div>
                 </div>
             </div>
-            <div class="close-layer toggle-visibility"><div class="button-close"></div></div>
-        </header>
-
-        <div class="contacts-wrapper-1">
-            <div class="bg-imge">
-                <div class="grdite-blck">
-                    <div class="container">
-                        <div class="header-empty-space"></div>
-                        <div class="empty-space col-xs-b25 col-sm-b50"></div>
-                        <div class="row">
-                                <div class="col-md-6 col-md-offset-3 text-center">
-                                    <div class="h2 light small"><b>CONTACT</b></div>
-                                    <div class="empty-space col-xs-b15"></div>
-                                    <div class="simple-article large light transparent text-center"></div>
-                                </div>
-                        </div>
-                        <div class="empty-space col-xs-b30 col-sm-b60"></div>
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <div class="contacts-entry">
-                                    <div class="h4 light small"><b>ADDRESS</b></div>
-                                    <div class="empty-space col-xs-b15"></div>
-                                    <div class="line-addr"></div>
-                                    <div class="empty-space col-xs-b15"></div>
-                                    <div class="simple-article light transparent">
-                                        SEC 44 Noida<br/>
-                                        Uttar Pradesh, India
-                                    </div>
-                                    <div class="empty-space col-xs-b15"></div>
-                                </div>
-                                <div class="empty-space col-xs-b25 col-sm-b0"></div>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="contacts-entry">
-                                    <div class="h4 light small"><b>PHONE</b></div>
-                                    <div class="empty-space col-xs-b15"></div>
-                                    <div class="line-addr"></div>
-                                    <div class="empty-space col-xs-b15"></div>
-                                    <div class="empty-space col-xs-b15"></div>
-                                    <div class="simple-article light transparent">
-                                        <a class="mouseover-simple" href="tel:+91987187602">+91 987 187 6023</a><br/>
-                                        <a class="mouseover-simple" href="tel:"></a>
-                                    </div>
-                                </div>
-                                <div class="empty-space col-xs-b25 col-sm-b0"></div>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="contacts-entry">
-                                    <div class="h4 light small"><b>EMAIL</b></div>
-                                    <div class="empty-space col-xs-b15"></div>
-                                    <div class="line-addr"></div>
-                                    <div class="empty-space col-xs-b15"></div>
-                                    <div class="empty-space col-xs-b15"></div>
-                                    <div class="simple-article light transparent">
-                                        <a class="mouseover-simple"  href="mailto:mail@nikhilchauhan.com">mail@nikhilchauhan.com</a><br/>
-                                        <a class="mouseover-simple"  href="mailto:"></a>
-                                    </div>
-                                </div>
-                                <div class="empty-space col-xs-b25 col-sm-b0"></div>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="contacts-entry">
-                                    <div class="h4 light small"><b>FOLLOW ME</b></div>
-                                    <div class="empty-space col-xs-b15"></div>
-                                    <div class="line-addr"></div>
-                                    <div class="empty-space col-xs-b15"></div>
-                                    <div class="empty-space col-xs-b15"></div>
-                                    <div class="follow">
-                                        <a class="entry ins" href="https://www.instagram.com/nikkhil.mxf/" target="_blank"><img src="../img/insta-w1.webp" alt=""></a>
-                                        <a class="entry ltr" href="https://letterboxd.com/nikkhilrajput/" target="_blank"><img src="../img/letter-w1.webp" alt=""></a>
-                                        <a class="entry imd" href="https://www.imdb.com/name/nm13364719/?ref_=nv_sr_srsg_0" target="_blank"><img src="../img/imdb-w1.webp" alt=""></a>
-                                        <a class="entry tw" href="https://twitter.com/Badnick_28" target="_blank"><img src="../img/twit-w1.webp" alt=""></a>
-                                        <a class="entry in" href="https://www.linkedin.com/in/filmmaker-nikhil-chauhan/" target="_blank"><img src="../img/linkin-w1.webp" alt=""></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="empty-space col-xs-b90 col-sm-b120"></div>
-                    </div>
+            <div class="detail-item">
+                <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                <div class="detail-text">
+                    <div class="detail-title">PHONE</div>
+                    <a href="tel:+919871876023">+91 987 187 6023</a>
+                </div>
+            </div>
+            <div class="detail-item">
+                <i class="fas fa-envelope" aria-hidden="true"></i>
+                <div class="detail-text">
+                    <div class="detail-title">EMAIL</div>
+                    <a href="mailto:mail@nikhilchauhan.com">mail@nikhilchauhan.com</a>
                 </div>
             </div>
         </div>
-        
+    </section>
 
-        <!-- FOOTER -->
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-xs-text-center col-md-text-left col-sm-b10 col-md-b0">
-                        <div class="copyright">
-                            <div class="simple-article small grey transparent">
-                                &copy; 2023 All rights reserved. 
-                                <div class="developed-by">Made with ❤️ by <a href="https://www.instagram.com/devesh12.11/" target="blank">BeastDev</a></div>
-                            </div>
-                        </div>
-                        <div class="empty-space col-xs-b20 col-md-b0"></div>
-                    </div>
+    <footer>
+        <section class="footer">
+            <nav class="media-links">
+                <ul>
+                    <li><a class="media insta" href=""><b><i class="fa-brands fa-instagram" aria-hidden="true"></i></b> Instagram</a></li>
+                    <li><a class="media letterbox" href=""><b><i class="fa-brands fa-letterboxd" aria-hidden="true"></i></b> LetterBox</a></li>
+                    <li><a class="media twitter" href=""><b><i class="fa-brands fa-imdb" aria-hidden="true"></i></b> IMDb</a></li>
+                    <li><a class="media twitter" href=""><b><i class="fa-brands fa-linkedin" aria-hidden="true"></i></b> Linkedin</a></li>
+                </ul>
+                <div class="email">
+                    <a class="logotext dm-sans dark-gold" href="mailto:mail@nikhilchauhan.com">
+                        <b><i class="fa-regular fa-envelope" aria-hidden="true"></i></b> Mail
+                    </a>
                 </div>
+            </nav>
+            <div class="copyright">
+                <div class="description">© 2024 All rights reserved</div>
+                <div class="creator">Made by BeastDev</div>
             </div>
-        </footer>
-    </div>
+        </section>
+    </footer>
 
-
-    <script src="js/jquery-2.1.4.min.js"></script>
-    <script src="js/swiper.jquery.min.js"></script>
-    <script src="js/jquery.mousewheel.min.js"></script>
-    <script src="js/global.js"></script>
-
-    <!-- MAP -->
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script src="js/map.html"></script>
-
-    <!-- CONTACT -->
-    <script src="js/contact.form.html"></script>
-
+    <script src="js/form.js"></script>
 </body>
-
-<!-- Mirrored from unionagency.one/modesto/contacts1.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Jan 2023 11:43:05 GMT -->
-
-<!-- Mirrored from nikhilchauhan.com/contacts/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 16 Sep 2023 13:24:28 GMT -->
 </html>

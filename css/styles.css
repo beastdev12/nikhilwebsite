@@ -626,48 +626,134 @@ nav ul li a {
   background-color: #FFCE57;
 }
 
-.awards-container {
-    display: flex;
-    padding-bottom: 10%;
-}
-
 .awards {
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    padding: 20px;
-    background-color: #111;
-    left: 50%;
-    transform: translateX(-50%);
-    overflow: hidden;
-}
-
-.awards-content {
-    display: flex;
-    gap: 20%;
-    transition: all 0.5s ease;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0% 0% 5% 0%;
+  background-color: #111;
 }
 
 .awards img {
-    object-fit: contain;
-    object-position: center;
-    width: 20%;
+  object-fit: contain;
+  object-position: center;
+  width: 10%;
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .awards img:hover {
     filter: drop-shadow(0 0 0.75rem #e7e7e7);
 }
 
-.awards .carousel-previous,.carousel-next {
-    top: 50%;
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2% 5%;
+  background-color: #fff;
+  gap: 0 5%;
 }
 
-.awards .carousel-previous {
-    left: 0%;
+.contact-section::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translate3d(0px, -100%, 0px);
+  height: 50px;
+  width: 2px;
+  background-color: #FFCE57;
 }
 
-.awards .carousel-next {
-    right: 0%;
+.contact-form {
+  flex: 1;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.contact-form h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.contact-form .input-group {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #FFCE57;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.contact-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.contact-details .detail-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-details .detail-item i {
+  font-size: 24px;
+  color: #FFCE57;
+}
+
+.contact-details .detail-text {
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.contact-details .detail-text a {
+  position: relative;
+  text-decoration: none;
+  color: #000;
+}
+
+.contact-details .detail-text a::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  bottom: -2px;
+}
+
+.contact-details .detail-text a:hover::before {
+  width: 100%;
+}
+
+.contact-details .detail-title {
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 footer {
@@ -688,10 +774,9 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 2%;
-  font-family: monospace;
-  font-size: 1.5em;
+  font-size: 1em;
   color: #111;
-  text-align: center;
+  text-align: left;
 }
 
 .media-links ul {
@@ -706,7 +791,7 @@ footer {
   position: relative;
   color: #000;
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 1.25em;
 }
 
 .media-links ul li a::before,
@@ -720,37 +805,34 @@ footer {
 }
 
 .media-links ul li a::before {
-  top: 90%;
+  top: 100%;
   left: 50%;
   transform: translateY(-50%);
 }
 
 .media-links ul li a::after {
-  top: 90%;
+  top: 100%;
   right: 50%;
   transform: translateY(-50%);
 }
 
 .media-links ul li a:hover::before,
 .media-links ul li a:hover::after {
-  width: 40%;
+  width: 50%;
 }
 
 .media-links .email {
   padding: 2% 0;
-  font-size: 2rem;
+  font-size: 1.25rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .media-links .email a {
   position: relative;
-  color: #000;
   text-decoration: none;
-  font-weight: 400;
 }
 
-.media-links .email a::before,
-.media-links .email a::after {
+.media-links .email a::before {
   content: '';
   position: absolute;
   width: 0;
@@ -761,26 +843,19 @@ footer {
 
 .media-links .email a::before {
   top: 90%;
-  left: 0;
-  transform: translateY(-50%);
 }
 
-.media-links .email a::after {
-  top: 90%;
-  right: 100%;
-  transform: translateY(-50%);
-}
 
 .media-links .email a:hover::before,
 .media-links .email a:hover::after {
-  width: 40%;
+  width: 100%;
 }
 
 .copyright {
   align-self: flex-end;
   text-align: right;
   transform: translateY(-50%);
-  font-size: 1.5em;
+  font-size: 1.25em;
 }
 
 .copyright .description {
@@ -795,9 +870,6 @@ footer {
   font-size: 1em;
   padding: 0;
 }
-
-
-
 
 @media (max-width: 767px) {
   .navMobileMenu {
@@ -968,15 +1040,15 @@ footer {
 
 @media (max-width: 1440px) {
   .media-links ul li a {
-    font-size: 1em;
+    font-size: 0.9em;
   }
   
   .media-links .email {
-    font-size: 0.75em;
+    font-size: 0.9em;
   }
 
   .copyright {
-    font-size: 1em;
+    font-size: 0.75em;
   }
 }
 
@@ -1075,6 +1147,102 @@ footer {
   font-weight: 700;
   font-style: normal;
 }
+
+.cormorant-garamond-light {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.cormorant-garamond-regular {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cormorant-garamond-medium {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.cormorant-garamond-semibold {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.cormorant-garamond-bold {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.cormorant-garamond-light-upper {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.cormorant-garamond-regular-upper {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.cormorant-garamond-medium-upper {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.cormorant-garamond-semibold-upper {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.cormorant-garamond-bold-upper {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.cormorant-garamond-light-italic {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.cormorant-garamond-regular-italic {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.cormorant-garamond-medium-italic {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.cormorant-garamond-semibold-italic {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.cormorant-garamond-bold-italic {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
 
 /*  Color Classes */
 .gold {
