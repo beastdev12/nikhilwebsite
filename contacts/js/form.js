@@ -1,6 +1,6 @@
 const form = document.getElementById('dataForm');
 
-        const apiUrl = `https://nikhilweapi.vercel.app/`
+        const apiUrl = `https://nikhilweapi.vercel.app`
 
         form.addEventListener('submit', async (e) => {
           e.preventDefault();
