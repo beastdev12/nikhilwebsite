@@ -1,0 +1,114 @@
+body {
+    overflow-x: hidden;
+}
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    background-image: url('../img/about-bg.webp');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.intro::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.intro-text {
+    position: relative;
+    text-align: left;
+    z-index: 5;
+    padding: 0% 4%;
+}
+
+.intro-text h2 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.intro-text p {
+    font-size: 24px;
+    max-width: 50%;
+}
+
+.about-me {
+    padding: 40px;
+    text-align: center;
+    background-color: #111;
+}
+
+.about-me h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about-me p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.about-me::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translate3d(0px, -130%, 0px);
+  height: 50px;
+  width: 2px;
+  background-color: #FFCE57;
+}
+
+.awards {
+  display: grid;
+  gap: 20px;
+  padding: 5%;
+  background-color: #111;
+  align-items: center;
+  grid-template-columns: repeat(6, 1fr);
+  
+  position: relative;
+  grid-template-areas:
+    ". . a a . ."
+    ". . .";
+}
+
+.awards img {
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.awards img:hover {
+    filter: drop-shadow(0 0 0.75rem #e7e7e7);
+}
+
+@media (max-width: 1440px) {
+}
+
+@media (max-width: 767px) {
+    .intro-text {
+        padding: 0% 5%;
+    }
+    
+    .intro-text p {
+        max-width: 75vw;
+    }
+
+    .awards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 400px){
+
+}
