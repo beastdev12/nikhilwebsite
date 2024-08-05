@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let currentIndex = 0;
     const totalItems = items.length;  
     const autoplaySpeed = 1 * 6 * 1000; // min : s : ms
-    const offsetStart = CheckDeviceWidth() ? -5 : -7.5;
+    const offsetStart = CheckDeviceWidth() ? -11 : -11;
     const offsetsSkip = 50;
   
     function addClass(item) {

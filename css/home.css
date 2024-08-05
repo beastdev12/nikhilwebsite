@@ -3,9 +3,10 @@
     flex-direction: column;
     justify-items: center;
     align-items: center;
-    background-color: #111;
+    background-color: #121212;
     z-index: 3;
     min-height: 100vh;
+    padding-bottom: 3%;
 }
 .portfolio-wrapper::before {    
     content: '';
@@ -22,6 +23,7 @@
     justify-content: center;
     margin-top: 4%;
     margin-bottom: 4%;
+    padding-top: 1%;
   }
   
   .sorter li {
@@ -32,7 +34,7 @@
     width: 130px;
     text-align: center;
     text-transform: uppercase;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 .sorter a {
     border-left: 0px solid rgba(41, 41, 41, 0.95) ;
@@ -88,6 +90,7 @@
     border-radius: 3%;
     transition: all 700ms cubic-bezier(0.19, 1, 0.22, 1);
     transition-delay: 0.10s;
+    object-position: center;
 }
 
 .portfolio .container:hover .image-holder .image {
@@ -114,13 +117,21 @@
 }
 
 .title {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.5em;
     font-weight: 600;
 }
 
+.title > a {
+    color: #fff;
+}
+
+.title:hover > a {
+    color: #FFCE57;
+}
+
 .role {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-size: 1em;
 }
@@ -158,14 +169,15 @@
     background-size: cover;
     background-position: center;
     transition: all 1s ease;
-height: inherit;
+    height: inherit;
+    backface-visibility: 0.5;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .carousel-content {
-  display: flex;
-  transition: transform 0.5s ease;
-  align-items: center;
-  
+    display: flex;
+    transition: transform 0.5s ease;
+    align-items: center;
 }
 
 .carousel-item {
@@ -176,6 +188,13 @@ flex-direction: column;
     transition: transform 0.5s ease;
 align-content: center;
 justify-items: center;
+}
+
+.carousel-content::before {
+    content: '';
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
 }
 
 .image-container {
@@ -216,7 +235,7 @@ object-position: center center;
 
 .under-text {
 color: aliceblue;
-display: flex;
+display: none;
 flex-direction: column;
 align-items: center;
 justify-items: center;
@@ -361,6 +380,7 @@ text-transform: uppercase;
     }
     .sorter {
         width: 80%;
+        padding-top: 10%;
     }
     .sorter li{
         display: flex;

@@ -5,8 +5,8 @@
     margin: 0;
   }
   body.dark{
-    background-color: #111;
-    background: #111;
+    background-color: #121212;
+    background: #121212;
   }
 
   body.light{
@@ -14,6 +14,9 @@
     background: #d4d4d4;  
   }
 
+  a {
+    text-decoration: none;
+  }
   .page-content{
     display: flex;
     justify-content: center;
@@ -55,9 +58,14 @@
     align-items: center;
     align-content: center;
     text-decoration: none;
-    color: #f0f0f0;
+    color: #FFCE57;
     transition: color 0.3s ease;
   }
+
+  .logo a:hover {
+    color: #FFCE57;
+  }
+
   .logo a .logotext {
     transition: color 0.3s ease;
     font-family: "Montserrat", sans-serif;
@@ -72,9 +80,8 @@
   }
 
   .logo:hover a .logotext{
-    color: #66ccff;
+    color: #FFCE57;
   }
-
   
   
   .logo img {
@@ -92,15 +99,20 @@
   .nav-links li {
     margin: 0 25px;
   }
+
+  .nav-links li .active {
+    font-weight: 600;
+  }
   
   .nav-links a {
     text-decoration: none;
     color: #f0f0f0; /*rgb(176, 92, 255)*/
     transition: color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
   }
   
   .nav-links a:hover {
-    color: #66ccff; /* Hover color */
+    color: #FFCE57; /* Hover color */
   }
   
 
@@ -222,7 +234,7 @@ nav ul li a {
 footer {
   display: flex;
   flex-direction: column;
-  background-color: #000000;
+  background-color: #191919;
   color: #bbbbbb;
   border-top: 3px solid #636363;
 }
@@ -330,6 +342,8 @@ footer {
 }
 
 .copyright .description {
+  display: none;
+  
   position: relative;
   width: auto;
   opacity: 1;
