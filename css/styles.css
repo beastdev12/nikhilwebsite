@@ -281,7 +281,7 @@ footer {
   position: absolute;
   width: 0;
   height: 2px;
-  background-color: #000;
+  background-color: #aaaaaa;
   transition: width 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
