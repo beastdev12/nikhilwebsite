@@ -8,7 +8,7 @@ function CheckDeviceWidth(width) {
     const awards = document.querySelector('.awards');
     const items = awards.querySelectorAll('.awards-item');
     
-    const columns = CheckDeviceWidth() ? 4 : 6;
+    const columns = CheckDeviceWidth() ? 3 : 6;
     const totalRows = Math.ceil(items.length / columns);
   
     gridTemplateAreas = '';
